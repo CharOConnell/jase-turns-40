@@ -18,6 +18,7 @@ function RsvpForm () {
           );
         reset();
         document.getElementById("successToast").innerHTML = "Thank you for your RSVP";
+        document.getElementById("successToast").className = "text-red-500 py-4";
     };
     
     return (
@@ -65,7 +66,7 @@ function RsvpForm () {
                         {...register("dietary", { required: false, maxLength: 20 })} />
                     </div>
                 </div>
-                <div id="successToast" className="text-red-500 py-4"></div>
+                <div id="successToast"></div>
                 <input type="submit" className="baranis-yellow funky-font text-lg md:w-1/6 mx-auto hover:bg-yellow-500 
                 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm sm:w-2/4 
                 px-5 py-2.5 text-center dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800"/>
