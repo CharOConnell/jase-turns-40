@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/jase-turns-40/static/css/main.b1d4edc8.css",
-    "main.js": "/jase-turns-40/static/js/main.7325ea78.js",
+    "main.js": "/jase-turns-40/static/js/main.ffc45180.js",
     "static/js/787.3cede000.chunk.js": "/jase-turns-40/static/js/787.3cede000.chunk.js",
     "static/media/jason0.jpg": "/jase-turns-40/static/media/jason0.2360e47c61358b55fa1f.jpg",
     "static/media/Limelight-Regular.ttf": "/jase-turns-40/static/media/Limelight-Regular.3776a5b3985bb9da2ea7.ttf",
     "index.html": "/jase-turns-40/index.html",
     "main.b1d4edc8.css.map": "/jase-turns-40/static/css/main.b1d4edc8.css.map",
-    "main.7325ea78.js.map": "/jase-turns-40/static/js/main.7325ea78.js.map",
+    "main.ffc45180.js.map": "/jase-turns-40/static/js/main.ffc45180.js.map",
     "787.3cede000.chunk.js.map": "/jase-turns-40/static/js/787.3cede000.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b1d4edc8.css",
-    "static/js/main.7325ea78.js"
+    "static/js/main.ffc45180.js"
   ]
 }
