@@ -1,7 +1,9 @@
 function Header() {
     return (
         <nav>
-            <h1 className="funky-font baranis-yellow">Jason Turns 40!</h1>
+            <div className="baranis-yellow flex mx-auto p-4">
+                <h1 className="funky-font p-3">Jason Turns 40!</h1>
+            </div>
         </nav>
     )
 }
