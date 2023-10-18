@@ -2,18 +2,19 @@ import jason from './jason0.jpg'
 
 function Details() {
     return (
-        <div className='flex flex-row'>
-            <div className='basis-1/2 md:basis-full'>
-                <img src={jason} alt="Jason" className="object-scale-down"/>
+        <div className='grid grid-cols-1 md:grid-cols-2 content-center'>
+            <div className='p-3'>
+                <img src={jason} alt="Jason" className="img-thumbnail img-fluid rounded"/>
             </div>
-            <div className='basis-1/2 xs:basis-full py-3'>
-                <h2 className="funky-font text-center">DETAILS</h2>
-                <p>
-                    <strong className='funky-font'>Timings:</strong><br></br>
+            <div className='p-3'>
+                <p className="funky-font text-center py-3 mt-2 text-xl">DETAILS</p>
+                <p className='pb-3'>
+                    <strong className='funky-font py-3'>Timings:</strong><br></br>
                     Saturday 9th December from 6pm till midnight
                 </p>
-                <p>
-                    <strong className='funky-font'>Location:</strong><br></br>
+                <p className='pb-3'>
+                    <strong className='funky-font py-3'>Location:</strong><br></br>
+                    <a href='https://baranis.co.uk/' target='_blank'>Baranis</a>
                     <p>
                         115 Chancery Lane <br></br>
                         London, WC2A 1PP
@@ -23,21 +24,22 @@ function Details() {
                         Chancery Lane (6 min walk) <br></br>
                         Temple (7 min walk)
                     </p>
+                    <a href='https://goo.gl/maps/v5LiI' target='_blank'>Google Maps</a>
                 </p>
-                <p>
-                    <strong className='funky-font pt-2'>Dress Code:</strong><br></br>
+                <p className='pb-3'>
+                    <strong className='funky-font py-3'>Dress Code:</strong><br></br>
                     Your best sparkly party gear!
                 </p>
-                <p>
-                    <strong className='funky-font'>Catering:</strong><br></br>
+                <p className='pb-3'>
+                    <strong className='funky-font py-3'>Catering:</strong><br></br>
                     There will be food, wine and a <italic>cheeky cocktail</italic> for all
                 </p>
-                <p>
-                    <strong className='funky-font'>Gifts:</strong><br></br>
+                <p className='pb-3'>
+                    <strong className='funky-font py-3'>Gifts:</strong><br></br>
                     Please don't bring any birthday gifts - your presence is the present!
                 </p>
-                <p>
-                    <strong className='funky-font'>RSVP Deadline:</strong><br></br>
+                <p className='pb-3'>
+                    <strong className='funky-font py-3'>RSVP Deadline:</strong><br></br>
                     Please send in your RSVP responses by the 15th November. Scroll down to submit your RSVP
                 </p>
             </div>
