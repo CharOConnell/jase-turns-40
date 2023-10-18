@@ -1,15 +1,30 @@
 import { useForm } from "react-hook-form";
+import emailjs from "emailjs-com";
+
 
 function RsvpForm () {
-    const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+    const { register, handleSubmit, formState: { errors }, reset } = useForm();
+    
+    const sendEmail = (formData) => {
+        emailjs
+          .send("gmail", "jason", formData, "GzsslZiu8VpD9iAUS")
+          .then(
+            (result) => {
+              console.log(result.text);
+            },
+            (error) => {
+              console.log(error.text);
+            }
+          );
+        reset();
+    };
     
     return (
         <div className='grid grid-cols-1 content-center mb-12'>
             <hr className='flex border-black w-1/2 mx-auto'></hr>
             <p className="funky-font text-center py-3 mt-2 text-xl">RSVP</p>
             <hr className='flex border-black w-1/2 mx-auto mb-3'></hr>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={handleSubmit(sendEmail)}>
                 <label htmlFor="firstName" className="block mb-2 text-sm font-medium">Your (and your guest's) name:</label>
                 <div className="grid grid-cols-1">
                     <div className="mb-2">

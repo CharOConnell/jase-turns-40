@@ -1,6 +1,7 @@
 import jason from './jason0.jpg'
 
-function Details() {
+
+function Details() {    
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 content-center'>
             <div className='p-4'>
@@ -14,9 +15,11 @@ function Details() {
                     <strong className='funky-font py-3'>Timings:</strong><br></br>
                     Saturday 9th December from 6pm till midnight
                 </p>
-                <div className='pb-3'>
+                <div className='pb-4'>
                     <p><strong className='funky-font pt-2'>Location:</strong></p><br></br>
-                    <a href='https://baranis.co.uk/' target='_blank' rel='noreferrer' className='btn border-2 rounded border-black p-1'>Baranis</a>
+                    <a href='https://baranis.co.uk/' target='_blank' rel='noreferrer' className='baranis-yellow funky-font text-lg md:w-1/6 mx-auto hover:bg-yellow-500 
+                focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm sm:w-2/4 
+                px-5 py-2.5 text-center dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800'>Baranis</a>
                     <p className='pt-2'>
                         115 Chancery Lane <br></br>
                         London, WC2A 1PP
@@ -26,7 +29,9 @@ function Details() {
                         Chancery Lane (6 min walk) <br></br>
                         Temple (7 min walk)
                     </p>
-                    <a href='https://goo.gl/maps/v5LiI' target='_blank' rel='noreferrer' className='btn border-2 rounded border-black p-1'>Google Maps</a>
+                    <a href='https://goo.gl/maps/v5LiI' target='_blank' rel='noreferrer' className='baranis-yellow funky-font text-lg md:w-1/6 mx-auto hover:bg-yellow-500 
+                focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm sm:w-2/4 
+                px-5 py-2.5 text-center dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800'>Google Maps</a>
                 </div>
                 <p className='pb-3'>
                     <strong className='funky-font py-3'>Dress Code:</strong><br></br>
